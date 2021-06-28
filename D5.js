@@ -288,7 +288,7 @@ const olderMovie = function(){
   let oldestMovie = [
   {Title: "placeholder",
   Year: "9999",
-  imdbID: "0",
+  imdbID: "placeholder",
   Type: "placeholder",
   Poster:
     "placeholder",
