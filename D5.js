@@ -425,4 +425,4 @@ const removeIndex = function(index){
   return n > 1;
 }
 
-console.log(isItPrime(1))
+console.log(isItPrime(1))*/
