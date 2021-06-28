@@ -361,7 +361,7 @@ console.log(sumAllTheYears())
 */
 const searchByTitle = function(title){
   for (let i = 0; i < movies.length;i++){
-    if(title === movies[i].Title)
+    if(movies[i].Title.includes(title))
       return movies[i]
     }
 }
@@ -382,6 +382,8 @@ const searchAndDivide = function(string){
     else dividedResults.unmatch.push(movies[i])
   return dividedResults
 }
+
+//seachbytitle for search and divide logic
 /* Ex.20
    Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
 */
