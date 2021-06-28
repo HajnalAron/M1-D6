@@ -303,6 +303,7 @@ let moviesCopy = [...movies]
       }
     return arrayOfTitles
   }
+  onlyTheTitles()
   console.log(arrayOfTitles)
 
 /* Ex.15
