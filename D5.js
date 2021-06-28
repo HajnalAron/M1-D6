@@ -285,8 +285,21 @@ const deleteProp = function(object,property){
 */
 
 const olderMovie = function(){
-  return
+  let oldestMovie = [
+  {Title: "placeholder",
+  Year: "9999",
+  imdbID: "0",
+  Type: "placeholder",
+  Poster:
+    "placeholder",
+},]
+  for (let i = 0; i<movies.length; i++)
+  if (parseInt(oldestMovie[0].Year) > parseInt(movies[i].Year)){
+    oldestMovie.splice(0,1,movies[i])
+  }
+  return oldestMovie
 }
+console.log(olderMovie())
 
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
