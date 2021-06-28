@@ -364,12 +364,11 @@ const searchAndDivide = function(string){
   }
     for (let i = 0; i < movies.length; i++)
     if (movies[i].Title.includes(string)){
-      dividedResults.match += movies[i]
+      dividedResults.match.push(movies[i])
     }
-    else dividedResults.unmatch += movies[i]
+    else dividedResults.unmatch.push(movies[i])
   return dividedResults
 }
-console.log(searchAndDivide("Rings"))
 /* Ex.20
    Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
 */
@@ -394,6 +393,7 @@ const removeIndex = function(index){
   ***
 */
 
+
 /* Ex.22 
   Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
   Example: 
@@ -403,6 +403,26 @@ const removeIndex = function(index){
   *****
 */
 
+/* const tree = function(n) {
+  for ( let i = 0; i < n ; i++ ) {
+      let star = '*';
+      let space = ' ';
+      for ( let j = 1; j <= i; j++ ) {
+          star = star + '**';            
+      }         
+      let spacesBefore = space.repeat(n-i-1);
+      star = spacesBefore + star;
+      console.log(star);
+  }
+}
+
 /* Ex.23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 */
+/*const isItPrime = function (n) {
+  for(var i = 2; i < n; i++)
+    if(n % i === 0) return false;
+  return n > 1;
+}
+
+console.log(isItPrime(1))
